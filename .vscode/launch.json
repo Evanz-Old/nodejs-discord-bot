@@ -12,6 +12,25 @@
 				"<node_internals>/**"
 			],
 			"program": "${workspaceFolder}\\src\\main.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Vite Node",
+			"runtimeExecutable": "npm",
+			"runtimeArgs": ["run", "start"],
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen",
+			// "serverReadyAction": {
+			// 	"pattern": "network start",
+			// 	"uriFormat": "http://localhost:3000"
+			// }
 		}
 	]
 }
